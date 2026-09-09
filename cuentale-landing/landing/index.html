@@ -89,18 +89,19 @@
   }
   .hero svg { width: 90px; height: 103px; margin-bottom: 1rem; filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.4)); }
   .hero .nombre-hero {
-  display: block;
-  font-family: 'Baloo 2', cursive; font-weight: 800; color: var(--verde);
-  -webkit-text-stroke: 5.5px #000;
-  paint-order: stroke fill;
+  display: inline-block;
+  font-family: 'Baloo 2', cursive; font-weight: 800;
+  background: linear-gradient(180deg, #7EEBD0 0%, #128C6E 55%, #0C6A52 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #0A2E24;
   font-size: clamp(3.2rem, 8vw, 5rem); line-height: 1;
   margin-bottom: 1.2rem;
-  text-shadow:
-    0 0 5px rgba(255, 255, 255, 0.6),
-    2px 3px 0 var(--verde-oscuro),
-    4px 6px 0 var(--verde-oscuro),
-    6px 9px 0 rgba(0,0,0,0.25),
-    8px 14px 18px rgba(0,0,0,0.5);
+  filter:
+    drop-shadow(0 0 10px rgba(255, 211, 78, 0.55))
+    drop-shadow(0 10px 14px rgba(0, 0, 0, 0.45));
 }
   .hero h1 {
     font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 800; margin-bottom: 1rem;
